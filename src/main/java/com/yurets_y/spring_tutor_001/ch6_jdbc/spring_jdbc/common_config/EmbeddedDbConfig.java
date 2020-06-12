@@ -19,15 +19,22 @@ public class EmbeddedDbConfig {
     /*
      * Создание встроенной базы данных
      */
+    /*
+     * Создание встроенной базы данных
+     */
     @Bean
     public DataSource dataSource() {
         try {
             EmbeddedDatabaseBuilder dbBuilder = new EmbeddedDatabaseBuilder();
-            // Создание встроенной базы данных по типу H2
             return dbBuilder.setType(EmbeddedDatabaseType.H2)
                     .addScripts(
+                            // Создание схемы
                             "classpath:spring/ch6_jdbc/embedded_db/schema.sql",
-                            "classpath:spring/ch6_jdbc/embedded_db/test-data.sql")
+                            // Создание тестовых значений
+                            "classpath:spring/ch6_jdbc/embedded_db/test-data.sql",
+                            //Сохранение встроенной функции в базе данных
+                            "classpath:spring/ch6_jdbc/embedded_db/stored-function.sql"
+                    )
                     .build();
         } catch (Exception e) {
             logger.error("Embedded DataSource bean cannot be created!", e);

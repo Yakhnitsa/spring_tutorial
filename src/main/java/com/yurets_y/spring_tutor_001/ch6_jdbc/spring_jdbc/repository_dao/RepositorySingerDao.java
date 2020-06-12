@@ -69,9 +69,11 @@ public class RepositorySingerDao implements SingerDao {
         return null;
     }
 
+    // Вызов встроенной функции для получения данных
     @Override
     public String findFirstNameById(Long id) {
-        return null;
+        List<String> result = storedFunctionFirstNameById.execute(id);
+        return result.size() > 0 ? result.get(0) : null;
     }
 
     @Override

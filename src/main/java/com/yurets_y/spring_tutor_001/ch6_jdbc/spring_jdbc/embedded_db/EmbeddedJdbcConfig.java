@@ -29,7 +29,6 @@ public class EmbeddedJdbcConfig {
     public DataSource dataSource() {
         try {
             EmbeddedDatabaseBuilder dbBuilder = new EmbeddedDatabaseBuilder();
-            // Создание встроенной базы данных по типу H2
             return dbBuilder.setType(EmbeddedDatabaseType.H2)
                     .addScripts(
                             "classpath:spring/ch6_jdbc/embedded_db/schema.sql",

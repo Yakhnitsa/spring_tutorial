@@ -4,9 +4,12 @@ import com.yurets_y.spring_tutor_001.ch6_jdbc.dao.SingerDao;
 import com.yurets_y.spring_tutor_001.ch6_jdbc.entities.Album;
 import com.yurets_y.spring_tutor_001.ch6_jdbc.entities.Singer;
 import com.yurets_y.spring_tutor_001.ch6_jdbc.spring_jdbc.row_mapper.RowMapperDaoConfig;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.GenericApplicationContext;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -14,6 +17,19 @@ import java.util.GregorianCalendar;
 import java.util.List;
 
 public class RepositorySingerDemo {
+
+    private SingerDao singerDao;
+    private GenericApplicationContext context;
+
+    @Before
+    public void initContext(){
+        this.context = new AnnotationConfigApplicationContext(RepositorySingerConfig.class);
+        this.singerDao = context.getBean("configured_singer_dao",SingerDao.class);
+    }
+    @After
+    public void closeContext(){
+        this.context.close();
+    }
 
     @Test
     public void testRowMapper(){
@@ -83,10 +99,13 @@ public class RepositorySingerDemo {
             if(singer1.getAlbums() != null){
                 singer1.getAlbums().forEach(album1 -> System.out.println("---->" + album1));
             }
-
         });
+    }
 
 
-
+    @Test
+    public void getNameByIdTest(){
+        String firstName = singerDao.findFirstNameById(2L);
+        System.out.println(firstName);
     }
 }
