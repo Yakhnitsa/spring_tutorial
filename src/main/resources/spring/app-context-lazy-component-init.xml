@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="masterByConstructor" class="com.yurets_y.spring_tutor_001.lazy_bin_init.MasterComponent"
+          autowire="constructor"
+          lazy-init="true"></bean>
+
+    <bean id="masterByInitMethod" class="com.yurets_y.spring_tutor_001.lazy_bin_init.MasterComponent"
+          autowire="byType"
+          lazy-init="true"
+    ></bean>
+    <bean id="lazy" class="com.yurets_y.spring_tutor_001.lazy_bin_init.LazyComponent"
+          lazy-init="true">
+    </bean>
+
+</beans>

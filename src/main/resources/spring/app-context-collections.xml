@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="collectionsHolder" class="com.yurets_y.spring_tutor_001.annotation.CollectionsHolder">
+        <property name="stringList">
+            <list>
+                <value>List value 1</value>
+                <value>List value 2</value>
+                <value>List value 3</value>
+            </list>
+        </property>
+        <property name="simpleMap">
+            <map>
+                <entry key="Key 1" value="First value"/>
+                <entry key="Key 2" value="Second value"/>
+                <entry key="Key 3" value="Third value"/>
+                <entry key="Key 4" value="Fourth value"/>
+            </map>
+        </property>
+        <property name="extendedMap">
+            <map>
+                <entry key="key 1">
+                    <bean class="com.yurets_y.spring_tutor_001.annotation.EngMessageProvider"/>
+                </entry>
+                <entry key="key 2">
+                    <bean class="com.yurets_y.spring_tutor_001.annotation.RusMessageProvider"/>
+                </entry>
+                <entry key="key 3">
+                    <bean class="com.yurets_y.spring_tutor_001.annotation.UkrainianMessageProvider"/>
+                </entry>
+
+                <entry key="key 4" value-ref="rusGoodbyeMessageProvider"/>
+                <entry key="key 5" value-ref="ukrGoodbyeMessageProvider"/>
+                <entry key="key 6" value-ref="engGoodbyeMessageProvider"/>
+                <entry key="key 7" value-ref="chineesMessageProvider"/>
+            </map>
+        </property>
+
+
+    </bean>
+
+    <!--different message providers-->
+    <bean id="rusGoodbyeMessageProvider" class="com.yurets_y.spring_tutor_001.annotation.ConfiguredMessageProvider">
+        <property name="message" value="До свидания!"/>
+    </bean>
+
+    <bean id="ukrGoodbyeMessageProvider" class="com.yurets_y.spring_tutor_001.annotation.ConfiguredMessageProvider">
+        <property name="message" value="До побачення!"/>
+    </bean>
+
+    <bean id="engGoodbyeMessageProvider" class="com.yurets_y.spring_tutor_001.annotation.ConfiguredMessageProvider">
+        <property name="message" value="Goodbye!"/>
+    </bean>
+
+    <bean id="chineesMessageProvider" class="com.yurets_y.spring_tutor_001.annotation.ConfiguredMessageProvider">
+        <constructor-arg value="去他妈的一切"/>
+    </bean>
+
+</beans>
