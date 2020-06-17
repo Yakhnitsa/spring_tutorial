@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="alcohol" class="com.yurets_y.spring_tutor_001.names_and_aliases.Alcohol"
+        name="buhach,vypivon,vodyara,buhlo,happines,ocovyta"
+    >
+    </bean>
+    <alias name="alcohol" alias="vodka,fire-water"></alias>
+
+</beans>

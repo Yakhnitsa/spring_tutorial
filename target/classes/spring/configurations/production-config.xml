@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation=
+               "http://www.springframework.org/schema/beans
+               http://www.springframework.org/schema/beans/spring-beans.xsd"
+       profile="production">
+    <bean id="connection" class="com.yurets_y.spring_tutor_001.configuration_profiles.ConnectionService"
+          p:port="8235"
+          p:host="yandex.ru"
+          p:databaseUrl="jdbc:mysql://sandy:secret@[myhost1:1111,myhost2:2222]/db"
+    ></bean>
+</beans>
+
+
