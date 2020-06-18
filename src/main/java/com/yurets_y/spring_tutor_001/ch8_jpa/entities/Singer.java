@@ -38,24 +38,32 @@ import static javax.persistence.GenerationType.IDENTITY;
                 resultSetMapping = "IdAndNameResult"),
 })
 
-@SqlResultSetMapping(
-        name="NamesResult",
-        columns={@ColumnResult(name="FIRST_NAME")})
 
+@SqlResultSetMappings({
+        // Маппинг результата выборки в класс Singer
+        @SqlResultSetMapping(
+                name="singerResult",
+                entities={@EntityResult(entityClass = Singer.class)}
+        ),
+//        Маппинг результата выборки одной колонки
+        @SqlResultSetMapping(
+                name="NamesResult",
+                columns={@ColumnResult(name="FIRST_NAME")}
+                ),
 // Маппинг результата выборки в сторонний клас
-@SqlResultSetMapping(
-     name="IdAndNameResult",
-        classes={
-             @ConstructorResult(
-                     targetClass = Singer.SingerIdName.class,
-                     columns = {
-                             @ColumnResult(name="ID", type=Long.class),
-                             @ColumnResult(name="FIRST_NAME", type=String.class)
-                     }
-             )
-        }
-     )
-
+        @SqlResultSetMapping(
+                name="IdAndNameResult",
+                classes={
+                        @ConstructorResult(
+                                targetClass = Singer.SingerIdName.class,
+                                columns = {
+                                        @ColumnResult(name="ID", type=Long.class),
+                                        @ColumnResult(name="FIRST_NAME", type=String.class)
+                                }
+                        )
+                }
+        )
+})
 
 public class Singer implements Serializable {
 
