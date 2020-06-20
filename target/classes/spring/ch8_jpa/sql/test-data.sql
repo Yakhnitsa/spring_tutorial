@@ -16,3 +16,5 @@ insert into instrument (instrument_id) values ('Synthesizer');
 insert into singer_instrument(singer_id, instrument_id) values (1, 'Guitar');
 insert into singer_instrument(singer_id, instrument_id) values (1, 'Piano');
 insert into singer_instrument(singer_id, instrument_id) values (2, 'Guitar');
+
+insert into WRITER (first_name, last_name) values ('PAULO', 'KOELIO');
