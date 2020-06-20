@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Date;
 
 
-import com.yurets_y.spring_tutor_001.ch8_jpa.auditable.config.AuditConfig;
+import com.yurets_y.spring_tutor_001.ch8_jpa.auditable.config.BasicConfig;
 import com.yurets_y.spring_tutor_001.ch8_jpa.auditable.entities.Creator;
 import com.yurets_y.spring_tutor_001.ch8_jpa.auditable.entities.SingerAudit;
 import com.yurets_y.spring_tutor_001.ch8_jpa.auditable.services.AuditorService;
@@ -21,7 +21,7 @@ public class SpringAuditJPADemo {
     public static void main(String... args) {
 
         //GenericXmlApplicationContext ctx = new GenericXmlApplicationContext("classpath:spring/app-context-annotation.xml");
-        GenericApplicationContext ctx = new AnnotationConfigApplicationContext(AuditConfig.class);
+        GenericApplicationContext ctx = new AnnotationConfigApplicationContext(BasicConfig.class);
 
         SingerAuditService singerAuditService = ctx.getBean(SingerAuditService.class);
 
