@@ -23,23 +23,25 @@ public abstract class AuditableEntity<U> implements Serializable {
 	protected Date createdDate;
 
 	@CreatedBy
-	@Column(name = "CREATED_BY")
-	protected String createdBy;
+	@ManyToOne
+	@JoinColumn(name="CREATOR_ID")
+	protected Creator createdBy;
 
 	@LastModifiedBy
-	@Column(name = "LAST_MODIFIED_BY")
-	protected String lastModifiedBy;
+	@ManyToOne
+	@JoinColumn(name = "LAST_MODIFIED_BY")
+	protected Creator lastModifiedBy;
 
 	@LastModifiedDate
 	@Column(name = "LAST_MODIFIED_DATE")
 	@Temporal(TemporalType.TIMESTAMP)
 	protected Date lastModifiedDate;
 
-	public Optional<String> getCreatedBy() {
+	public Optional<Creator> getCreatedBy() {
 		return Optional.of(createdBy);
 	}
 
-	public void setCreatedBy(String createdBy) {
+	public void setCreatedBy(Creator createdBy) {
 		this.createdBy = createdBy;
 	}
 
@@ -51,11 +53,11 @@ public abstract class AuditableEntity<U> implements Serializable {
 		this.createdDate = createdDate;
 	}
 
-	public Optional<String> getLastModifiedBy() {
+	public Optional<Creator> getLastModifiedBy() {
 		return Optional.of(lastModifiedBy);
 	}
 
-	public void setLastModifiedBy(String lastModifiedBy) {
+	public void setLastModifiedBy(Creator lastModifiedBy) {
 		this.lastModifiedBy = lastModifiedBy;
 	}
 

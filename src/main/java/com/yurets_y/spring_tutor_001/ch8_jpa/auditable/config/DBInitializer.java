@@ -1,7 +1,9 @@
 package com.yurets_y.spring_tutor_001.ch8_jpa.auditable.config;
 
 
+import com.yurets_y.spring_tutor_001.ch8_jpa.auditable.entities.Creator;
 import com.yurets_y.spring_tutor_001.ch8_jpa.auditable.entities.SingerAudit;
+import com.yurets_y.spring_tutor_001.ch8_jpa.auditable.repos.CreatorRepository;
 import com.yurets_y.spring_tutor_001.ch8_jpa.auditable.repos.SingerAuditRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,9 +24,20 @@ public class DBInitializer {
 	@Autowired
     SingerAuditRepository singerRepository;
 
+	@Autowired
+	CreatorRepository creatorRepository;
+
 	@PostConstruct
 	public void initDB(){
 		logger.info("Starting database initialization...");
+
+		logger.info("Add auditor...");
+
+		Creator creator = new Creator();
+		creator.setFirstName("Architect");
+		creator.setLastName("Architect");
+		creatorRepository.save(creator);
+		logger.info(creator.toString());
 
 		SingerAudit singer = new SingerAudit();
 		singer.setFirstName("John");
@@ -49,6 +62,7 @@ public class DBInitializer {
 				(new GregorianCalendar(1975, 3, 1)).getTime().getTime()));
 
 		singerRepository.save(singer);
+
 		logger.info("Database initialization finished.");
 	}
 

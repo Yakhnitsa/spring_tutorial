@@ -6,7 +6,9 @@ import java.util.Date;
 
 
 import com.yurets_y.spring_tutor_001.ch8_jpa.auditable.config.AuditConfig;
+import com.yurets_y.spring_tutor_001.ch8_jpa.auditable.entities.Creator;
 import com.yurets_y.spring_tutor_001.ch8_jpa.auditable.entities.SingerAudit;
+import com.yurets_y.spring_tutor_001.ch8_jpa.auditable.services.AuditorService;
 import com.yurets_y.spring_tutor_001.ch8_jpa.auditable.services.SingerAuditService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,6 +48,10 @@ public class SpringAuditJPADemo {
         singerAuditService.save(singer);
         singers = singerAuditService.findAll();
         listSingers(singers);
+
+        AuditorService auditorService =ctx.getBean(AuditorService.class);
+
+        List<Creator> creatorList = auditorService.findAll();
 
         ctx.close();
     }

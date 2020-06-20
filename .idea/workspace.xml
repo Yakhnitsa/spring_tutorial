@@ -2,30 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92e35c60-f2a5-4db9-9680-9aad8a6e3c07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/AuditorAwareBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/SpringAuditJPADemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/config/AuditConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/config/DBInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entities/AuditableEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entities/SingerAudit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entity/AuditableEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entity/AuditableSinger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/repos/SingerAuditRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/services/SingerAuditService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/services/SingerAuditServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/entities/Writer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/jparepository/JpaRepoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/jparepository/config/RepoDataJpaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/jparepository/repo/SingerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/jparepository/service/SingerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/jparepository/service/SingerServiceRepoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/ch8_jpa/audit/db/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/ch8_jpa/audit/db/test-data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entities/Creator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/repos/CreatorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/services/AuditorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/ch8_jpa/sql/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/ch8_jpa/sql/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/ch8_jpa/sql/test-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/ch8_jpa/sql/test-data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/ch8_jpa/sql/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/ch8_jpa/sql/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/ch8_jpa/sql/test-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/ch8_jpa/sql/test-data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/AuditorAwareBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/AuditorAwareBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/SpringAuditJPADemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/SpringAuditJPADemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/config/DBInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/config/DBInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entities/AuditableEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entities/AuditableEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entity/AuditableEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entity/AuditableSinger.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,17 +57,17 @@
       <file leaf-file-name="AuditorAwareBean.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/AuditorAwareBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+            <state relative-caret-position="85">
+              <caret line="9" column="53" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpringAuditJPADemo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/SpringAuditJPADemo.java">
+      <file leaf-file-name="DBInitializer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/config/DBInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="257">
+              <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,11 +75,58 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="SingerAudit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entities/SingerAudit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1842">
-              <caret line="141" column="32" lean-forward="true" selection-start-line="141" selection-start-column="32" selection-end-line="141" selection-end-column="32" />
+            <state relative-caret-position="85">
+              <caret line="11" selection-start-line="11" selection-end-line="21" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpringAuditJPADemo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/SpringAuditJPADemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuditorService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/services/AuditorService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="63" lean-forward="true" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+                <element signature="e#546#547#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Creator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entities/Creator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuditableEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entities/AuditableEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="37" column="36" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="37" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,14 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/spring/ch7_hibernate/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch7_hibernate/common/HibernateConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch7_hibernate/entities/Album.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch7_hibernate/config/ConfigTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch7_hibernate/config/HibernateConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch7_hibernate/entities/Singer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch7_hibernate/dao/SingerDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch7_hibernate/dao/SingerDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch7_hibernate/SpringHibernateDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/entities/Album.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch7_hibernate/SingerService.java" />
@@ -146,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/service/SingerSummaryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/dto/SingerSummary.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/entities/Singer.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/service/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/service/SingerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/service/SingerServiceImpl.java" />
@@ -166,14 +190,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/entities/SingerAudit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/entities/AuditableSinger.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/entities/AuditableEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entity/AuditableEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/repos/SingerAuditRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/services/SingerAuditService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/services/SingerAuditServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/config/AuditConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/repos/CreatorRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/AuditorAwareBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entity/Creator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entity/AuditableEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entities/AuditableEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/services/AuditorService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entities/Creator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/repos/BooksRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/services/BooksService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entities/BookAuditable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/config/DBInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/SpringAuditJPADemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/AuditorAwareBean.java" />
       </list>
     </option>
   </component>
@@ -291,6 +324,39 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spring_tutor_001" type="462c0819:PsiDirectoryNode" />
               <item name="ch8_jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="auditable" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_tutor_001" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_tutor_001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring_tutor_001" type="462c0819:PsiDirectoryNode" />
+              <item name="ch8_jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="auditable" type="462c0819:PsiDirectoryNode" />
+              <item name="repos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_tutor_001" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_tutor_001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring_tutor_001" type="462c0819:PsiDirectoryNode" />
+              <item name="ch8_jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="auditable" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_tutor_001" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_tutor_001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring_tutor_001" type="462c0819:PsiDirectoryNode" />
+              <item name="ch8_jpa" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -392,11 +458,11 @@
       <recent name="com.yurets_y.spring_tutor_001.ch6_spring_jdbc" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yurets_y.spring_tutor_001.ch8_jpa.auditable.entity" />
+      <recent name="com.yurets_y.spring_tutor_001.ch8_jpa.auditable.repos" />
       <recent name="com.yurets_y.spring_tutor_001.ch7_hibernate.config" />
       <recent name="com.yurets_y.spring_tutor_001.configuration_profiles" />
       <recent name="com.yurets_y.spring_tutor_001.ch6_jdbc.spring_jdbc.repository_dao" />
-      <recent name="com.yurets_y.spring_tutor_001.ch6_jdbc.spring_jdbc.result_set_extructor" />
-      <recent name="com.yurets_y.spring_tutor_001.ch6_jdbc.spring_jdbc.named_parameter" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Dropbox\Development\Spring_tutorial\spring_tutor_001\src\main\java\com\yurets_y\spring_tutor_001\ch8_jpa\auditable" />
@@ -561,7 +627,7 @@
       <workItem from="1591770391503" duration="749000" />
       <workItem from="1591850010523" duration="1198000" />
       <workItem from="1591942423189" duration="28682000" />
-      <workItem from="1592467911237" duration="23203000" />
+      <workItem from="1592467911237" duration="28968000" />
     </task>
     <servers />
   </component>
@@ -598,7 +664,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163090000" />
+    <option name="totallyTimeSpent" value="168855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -614,18 +680,18 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info id="UI Designer" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997175" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.35734463" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32768363" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27824858" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39548022" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32909605" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19597316" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24026845" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.3295302" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
@@ -768,12 +834,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/SpringAuditJPADemo.java</url>
-          <line>47</line>
+          <line>55</line>
           <properties />
-          <option name="timeStamp" value="36" />
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="37" />
+      <option name="time" value="38" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -781,73 +847,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch7_hibernate/dao/SingerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch7_hibernate/dao/SingerDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="65" column="15" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#1929#1930#0" expanded="true" />
-            <element signature="e#1956#1957#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch7_hibernate/SpringHibernateDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="141" column="47" selection-start-line="141" selection-start-column="47" selection-end-line="141" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Книги/pro_spring_5/pro-spring-5-master/chapter08/spring-data-jpa/src/main/java/com/apress/prospring5/ch8/config/DataJpaConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="32" selection-start-line="32" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch7_hibernate/SingerService.java" />
-    <entry file="file://$PROJECT_DIR$/../../Книги/pro_spring_5/pro-spring-5-master/chapter08/jpa-crud/src/main/java/com/apress/prospring5/ch8/service/SingerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="20" selection-start-line="20" selection-end-line="23" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/ch8_jpa/properties.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch7_hibernate/config/HibernateConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-          <folding>
-            <element signature="method#hibernateProperties#0;class#HibernateConfig#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Книги/pro_spring_5/pro-spring-5-master/chapter08/jpa-crud/src/main/java/com/apress/prospring5/ch8/config/JpaConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/ConstructorResult.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1114,20 +1113,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entity/AuditableEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entity/AuditableSinger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/services/SingerAuditService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1135,13 +1120,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/config/AuditConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1155,30 +1133,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/config/DBInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/ch8_jpa/audit/db/schema.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/services/SingerAuditServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/repos/SingerAuditRepository.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1193,27 +1149,173 @@
     <entry file="file://$PROJECT_DIR$/../../Книги/pro_spring_5/pro-spring-5-master/chapter08/spring-data-jpa-audit/src/main/java/com/apress/prospring5/ch8/repos/SingerAuditRepository.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/AuditorAwareBean.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        <state relative-caret-position="261">
+          <caret line="111" column="21" lean-forward="true" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/SpringAuditJPADemo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/repos/CreatorRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="68">
+          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entity/AuditableSinger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/config/AuditConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-524">
+          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entity/Creator.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entity/AuditableEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="28" selection-start-line="28" selection-end-line="30" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/services/SingerAuditServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1842">
-          <caret line="141" column="32" lean-forward="true" selection-start-line="141" selection-start-column="32" selection-end-line="141" selection-end-column="32" />
+        <state relative-caret-position="255">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/services/AuditorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="63" lean-forward="true" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entities/Creator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/AuditorAwareBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entities/AuditableEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="37" column="36" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="37" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entities/SingerAudit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" selection-start-line="11" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/repos/BooksRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="70" lean-forward="true" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/services/BooksService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/entities/BookAuditable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1399#1400#0" expanded="true" />
+            <element signature="e#1438#1439#0" expanded="true" />
+            <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1504#1505#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
+            <element signature="e#1663#1664#0" expanded="true" />
+            <element signature="e#1646#1647#0" expanded="true" />
+            <element signature="e#1685#1686#0" expanded="true" />
+            <element signature="e#1848#1849#0" expanded="true" />
+            <element signature="e#1895#1896#0" expanded="true" />
+            <element signature="e#1830#1831#0" expanded="true" />
+            <element signature="e#1869#1870#0" expanded="true" />
+            <element signature="e#2089#2090#0" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#1991#1992#0" expanded="true" />
+            <element signature="e#2018#2019#0" expanded="true" />
+            <element signature="e#2062#2063#0" expanded="true" />
+            <element signature="e#2090#2091#0" expanded="true" />
+            <element signature="e#2072#2073#0" expanded="true" />
+            <element signature="e#2100#2101#0" expanded="true" />
+            <element signature="e#2142#2143#0" expanded="true" />
+            <element signature="e#2176#2177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/config/DBInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yurets_y/spring_tutor_001/ch8_jpa/auditable/SpringAuditJPADemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
